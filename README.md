@@ -1,6 +1,6 @@
 # 🚗 Car Price Project
 
-This project focuses on EDA and predicting the price of used cars based on various features using machine learning techniques. The goal is to build a model that can accurately predict car prices based on factors such as make, model, year, mileage, and more.
+This project focuses on EDA and applies machine learning techniques to predict the price of used cars based on various features such as make, model, year, mileage, and more.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -12,9 +12,15 @@ This project focuses on EDA and predicting the price of used cars based on vario
 
 
 
-## Project Overview
+## 📝 Project Overview
 
-In this project, a dataset of used cars is used to build regression models that predict the price of cars based on a set of features. Various models were tested, including:
+The goal of this project is to predict the price of used cars using various regression models. The project involves:
+- **Exploratory Data Analysis (EDA)** to understand the relationships between features.
+- **Data Preprocessing** to clean and prepare the data for modeling.
+- **Modeling** using a variety of machine learning algorithms.
+- **Evaluation** to assess the performance of each model using metrics like R² and MAE.
+  
+In this project various models were tested, including:
 - **Linear Regression**
 - **Lasso Regression**
 - **Random Forest Regressor**
@@ -38,7 +44,7 @@ The dataset used in this project is called `used_cars.csv`, which contains sever
 
 The dataset can be found in https://www.kaggle.com/datasets/taeefnajib/used-car-price-prediction-dataset/data and is used to train and test the models.
 
-## 🧹 Data Cleaning
+## 🧹 Data Preprocessing
 
 - Handling Missing Values
 - Checking for duplicates
@@ -65,10 +71,18 @@ The models' performance was evaluated using the following metrics:
 
 Results were compared between the different models to choose the best one for predicting car prices. The XGBoost Regressor provided the best performance after hyperparameter tuning.
 Best Parameters:  {'xgb__subsample': 0.7, 'xgb__reg_lambda': 1.5, 'xgb__reg_alpha': 0, 'xgb__n_estimators': 300, 'xgb__min_child_weight': 1, 'xgb__max_depth': 6, 'xgb__learning_rate': 0.1, 'xgb__gamma': 0.3, 'xgb__colsample_bytree': 0.8}
-MAE: 5435.93
-MSE: 61767264.00
-RMSE: 7859.22
-R² Score: 0.86
+
+The models were evaluated based on the following metrics:
+
+| Model                     | R² Score | MAE (Mean Absolute Error) | MSE (Mean Squared Error) | RMSE (Root Mean Squared Error) |
+|---------------------------|:--------:|:-------------------------:|:-------------------------:|:-----------------------------:|
+| Linear Regression         |   0.72   |         8350.66           |       126832539.48        |          11262.00             |
+| Lasso Regression          |   0.72   |         8245.14           |       125985702.32        |          11224.34             |
+| Random Forest             |   0.83   |         5998.16           |        78563343.13        |           8863.60             |
+| XGBoost Regressor         |   0.84   |         5873.59           |        73337984.00        |           8563.76             |
+| **Random Forest with Tuning** |   **0.80**   |         **6669.54**           |       **91325922.38**      |         **9556.46**            |
+| **XGBoost Regressor with Tuning** |   **0.86**   |         **5435.93**           |       **61767264.00**      |         **7859.22**            |
+
 
 ### Top 20 Car Brands
 
@@ -100,7 +114,7 @@ R² Score: 0.86
 
 These visualizations provide insights of the dataset.
 
-## Installation
+## 🛠️ Installation
 
 To run this project, make sure you have Python installed, and then install the required dependencies. If you're using a virtual environment, activate it before proceeding.
 
