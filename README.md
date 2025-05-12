@@ -1,10 +1,10 @@
-# Car Price Project
+# 🚗 Car Price Project
 
 This project focuses on EDA and predicting the price of used cars based on various features using machine learning techniques. The goal is to build a model that can accurately predict car prices based on factors such as make, model, year, mileage, and more.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Data](#data)
+- [Dataset](#dataset)
 - [Data Cleaning](#data-cleaning)
 - [Machine Learning Models](#machine-learning-models)
 - [Results](#results)
@@ -20,26 +20,33 @@ In this project, a dataset of used cars is used to build regression models that 
 - **Random Forest Regressor**
 - **XGBoost Regressor**
 
-Hyperparameter tuning was also performed using RandomizedSearchCV to optimize the models for better performance.
+📌 Hyperparameter tuning was also performed using RandomizedSearchCV to optimize the models for better performance.
 
-## Data
+## 📁 Dataset
 
 The dataset used in this project is called `used_cars.csv`, which contains several features about used cars. These features include:
-- `make`: Car brand 
-- `model`: Car model 
-- `year`: Year of manufacture
-- `mileage`: Distance the car has traveled in kilometers
-- `price`: The target variable (price of the car)
+- Brand & Model: Identify the brand or company name along with the specific model of each vehicle.
+- Model Year: Discover the manufacturing year of the vehicles, crucial for assessing depreciation and technology advancements.
+- Mileage: Obtain the mileage of each vehicle, a key indicator of wear and tear and potential maintenance requirements.
+- Fuel Type: Learn about the type of fuel the vehicles run on, whether it's gasoline, diesel, electric, or hybrid.
+- Engine Type: Understand the engine specifications, shedding light on performance and efficiency.
+- Transmission: Determine the transmission type, whether automatic, manual, or another variant.
+- Exterior & Interior Colors: Explore the aesthetic aspects of the vehicles, including exterior and interior color options.
+- Accident History: Discover whether a vehicle has a prior history of accidents or damage, crucial for informed decision-making.
+- Clean Title: Evaluate the availability of a clean title, which can impact the vehicle's resale value and legal status.
+- Price: Access the listed prices for each vehicle, aiding in price comparison and budgeting.
 
 The dataset can be found in https://www.kaggle.com/datasets/taeefnajib/used-car-price-prediction-dataset/data and is used to train and test the models.
 
-## Data Cleaning
+## 🧹 Data Cleaning
 
 - Handling Missing Values
 - Checking for duplicates
 - Feature Engineering
+- Converting data types
+- Removing outliers
 
-## Machine Learning Models
+## 🤖 Machine Learning Models
 
 In this project, we tested several machine learning models to predict car prices. The models used are:
 
@@ -48,9 +55,7 @@ In this project, we tested several machine learning models to predict car prices
 3. **Random Forest Regressor**: A tree-based ensemble method that can model complex non-linear relationships.
 4. **XGBoost Regressor**: A gradient boosting method known for its high performance in many regression tasks.
 
-**Hyperparameter Tuning** was performed using **RandomizedSearchCV** to find the best model parameters.
-
-## Results
+## 📈 Results
 
 The models' performance was evaluated using the following metrics:
 - **Mean Absolute Error (MAE)**
