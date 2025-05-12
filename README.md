@@ -11,7 +11,6 @@ This project focuses on EDA and applies machine learning techniques to predict t
 - [Installation](#installation)
 
 
-
 ## 📝 Project Overview
 
 The goal of this project is to predict the price of used cars using various regression models. The project involves:
@@ -70,6 +69,7 @@ The models' performance was evaluated using the following metrics:
 - **R² Score**
 
 Results were compared between the different models to choose the best one for predicting car prices. The XGBoost Regressor provided the best performance after hyperparameter tuning.
+
 Best Parameters:  {'xgb__subsample': 0.7, 'xgb__reg_lambda': 1.5, 'xgb__reg_alpha': 0, 'xgb__n_estimators': 300, 'xgb__min_child_weight': 1, 'xgb__max_depth': 6, 'xgb__learning_rate': 0.1, 'xgb__gamma': 0.3, 'xgb__colsample_bytree': 0.8}
 
 The models were evaluated based on the following metrics:
