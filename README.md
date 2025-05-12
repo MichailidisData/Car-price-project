@@ -5,7 +5,7 @@ This project focuses on EDA and applies machine learning techniques to predict t
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
-- [Data Cleaning](#data-cleaning)
+- [Data Preprocessing](#data-preprocessing)
 - [Machine Learning Models](#machine-learning-models)
 - [Results](#results)
 - [Installation](#installation)
@@ -60,7 +60,7 @@ In this project, we tested several machine learning models to predict car prices
 3. **Random Forest Regressor**: A tree-based ensemble method that can model complex non-linear relationships.
 4. **XGBoost Regressor**: A gradient boosting method known for its high performance in many regression tasks.
 
-## 📈 Results
+## Results 📈
 
 The models' performance was evaluated using the following metrics:
 - **Mean Absolute Error (MAE)**
